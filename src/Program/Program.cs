@@ -2,11 +2,14 @@
 
 namespace PII_Game_Of_Life
 {
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            bool [,] tablero = LectorArchivosTxt.LeerArchivo();
+            ImprimirTableroPorConsola.ImprimirTablero(tablero);
+            
         }
     }
 }
